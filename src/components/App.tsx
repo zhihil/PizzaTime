@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
 export class App extends React.Component {
-    render() {
+    public render() {
         return (
-            <div>Hello World!</div>
+            <div role="button" className="alfred">
+                Hello World!
+            </div>
         );
     }
 }
