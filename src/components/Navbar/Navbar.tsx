@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
 import logoImg from "../../images/logo.png";
 
 export class NavbarComponent extends React.Component {
@@ -20,9 +21,9 @@ export class NavbarComponent extends React.Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#order">Order</Nav.Link>
-                        <Nav.Link href="#about">About</Nav.Link>
-                        <Nav.Link href="#cart">Cart</Nav.Link>
+                        <Link to="/order">Order</Link>
+                        <Link to="/about">About</Link>
+                        <Link to="/cart">Cart</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
