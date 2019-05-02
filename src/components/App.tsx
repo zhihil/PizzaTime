@@ -1,11 +1,12 @@
 import React from "react";
+import { NavbarComponent } from "./Navbar";
 
 export class App extends React.Component {
     public render() {
         return (
-            <div role="button" className="alfred">
-                Hello World!
-            </div>
+            <>
+                <NavbarComponent />
+            </>
         );
     }
 }
