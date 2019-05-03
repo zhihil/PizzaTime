@@ -3,16 +3,19 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import logoImg from "../../images/logo.png";
+import { StyledLink, StyledNavbar } from "./Navbar.styled";
 
 export class NavbarComponent extends React.Component {
     public render() {
         return (
-            <Navbar bg="dark" variant="light" expand="lg">
+            <StyledNavbar expand="lg">
                 <Navbar.Brand>
-                    <Link to="/order">
-                        <div className="pt-logo">
+                    <Link className="pt-logo" to="/order">
+                        <>
                             {/* Mock logo constructed from <p> and <img>; remove later */}
-                            <span aria-hidden={true}>Pizza</span>
+                            <span className="logo-text" aria-hidden={true}>
+                                Pizza
+                            </span>
                             <img
                                 src={logoImg}
                                 width="60"
@@ -20,19 +23,27 @@ export class NavbarComponent extends React.Component {
                                 className="d-inline-block align-top"
                                 alt="Pizza Time Logo"
                             />
-                            <span aria-hidden={true}>Time</span>
-                        </div>
+                            <span className="logo-text" aria-hidden={true}>
+                                Time
+                            </span>
+                        </>
                     </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Link to="/order">Order</Link>
-                        <Link to="/about">About</Link>
-                        <Link to="/cart">Cart</Link>
+                    <Nav className="ml-auto">
+                        <StyledLink className="mr-5" to="/order">
+                            Order
+                        </StyledLink>
+                        <StyledLink className="mr-5" to="/about">
+                            About
+                        </StyledLink>
+                        <StyledLink className="mr-5" to="/cart">
+                            Cart
+                        </StyledLink>
                     </Nav>
                 </Navbar.Collapse>
-            </Navbar>
+            </StyledNavbar>
         );
     }
 }
