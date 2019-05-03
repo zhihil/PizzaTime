@@ -8,7 +8,7 @@ import { StyledLink, StyledNavbar } from "./Navbar.styled";
 export class NavbarComponent extends React.Component {
     public render() {
         return (
-            <StyledNavbar expand="lg">
+            <StyledNavbar expand="lg" variant="dark">
                 <Navbar.Brand>
                     <Link className="pt-logo" to="/order">
                         <>
