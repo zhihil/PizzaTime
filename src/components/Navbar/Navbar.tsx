@@ -8,15 +8,21 @@ export class NavbarComponent extends React.Component {
     public render() {
         return (
             <Navbar bg="dark" variant="light" expand="lg">
-                <Navbar.Brand href="#home">
-                    <img
-                        src={logoImg}
-                        width="60"
-                        height="60"
-                        className="d-inline-block align-top"
-                        alt=""
-                    />
-                    React-Bootstrap
+                <Navbar.Brand>
+                    <Link to="/order">
+                        <div className="pt-logo">
+                            {/* Mock logo constructed from <p> and <img>; remove later */}
+                            <span aria-hidden={true}>Pizza</span>
+                            <img
+                                src={logoImg}
+                                width="60"
+                                height="60"
+                                className="d-inline-block align-top"
+                                alt="Pizza Time Logo"
+                            />
+                            <span aria-hidden={true}>Time</span>
+                        </div>
+                    </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
