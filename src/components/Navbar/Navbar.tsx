@@ -11,15 +11,13 @@ export class NavbarComponent extends React.Component {
             <StyledNavbar expand="lg" variant="dark">
                 <Navbar.Brand>
                     <Link className="pt-logo" to="/order">
-                        <>
-                            <img
-                                src={logoImg}
-                                width="60"
-                                height="60"
-                                className="d-inline-block align-top"
-                                alt="Pizza Time Logo"
-                            />
-                        </>
+                        <img
+                            src={logoImg}
+                            width="60"
+                            height="60"
+                            className="d-inline-block align-top"
+                            alt="Pizza Time Logo"
+                        />
                     </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
