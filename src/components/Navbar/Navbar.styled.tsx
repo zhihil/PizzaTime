@@ -12,6 +12,7 @@ export const StyledNavbar = styled(Navbar)`
     #basic-navbar-nav {
         height: 100%;
     }
+
     .navbar-nav {
         height: 100%;
     }
