@@ -25,13 +25,25 @@ export class NavbarComponent extends React.Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <StyledLink className="mr-5" to="/order">
+                        <StyledLink
+                            activeClassName="current-nav"
+                            className="mr-5"
+                            to="/order"
+                        >
                             Order
                         </StyledLink>
-                        <StyledLink className="mr-5" to="/about">
+                        <StyledLink
+                            activeClassName="current-nav"
+                            className="mr-5"
+                            to="/about"
+                        >
                             About
                         </StyledLink>
-                        <StyledLink className="mr-5" to="/cart">
+                        <StyledLink
+                            activeClassName="current-nav"
+                            className="mr-5"
+                            to="/cart"
+                        >
                             Cart
                         </StyledLink>
                     </Nav>

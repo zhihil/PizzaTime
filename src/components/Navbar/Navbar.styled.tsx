@@ -1,5 +1,5 @@
 import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledNavbar = styled(Navbar)`
@@ -19,7 +19,7 @@ export const StyledNavbar = styled(Navbar)`
     }
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
     color: #f2f2f2;
     font-size: 1.5rem;
 
@@ -31,6 +31,11 @@ export const StyledLink = styled(Link)`
     :focus {
         color: #ffe900;
         text-decoration: none;
+        border-bottom: 0.3rem solid #ffe900;
+    }
+
+    &.current-nav {
+        color: #ffe900;
         border-bottom: 0.3rem solid #ffe900;
     }
 `;
