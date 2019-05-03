@@ -12,10 +12,6 @@ export class NavbarComponent extends React.Component {
                 <Navbar.Brand>
                     <Link className="pt-logo" to="/order">
                         <>
-                            {/* Mock logo constructed from <p> and <img>; remove later */}
-                            <span className="logo-text" aria-hidden={true}>
-                                Pizza
-                            </span>
                             <img
                                 src={logoImg}
                                 width="60"
@@ -23,9 +19,6 @@ export class NavbarComponent extends React.Component {
                                 className="d-inline-block align-top"
                                 alt="Pizza Time Logo"
                             />
-                            <span className="logo-text" aria-hidden={true}>
-                                Time
-                            </span>
                         </>
                     </Link>
                 </Navbar.Brand>
