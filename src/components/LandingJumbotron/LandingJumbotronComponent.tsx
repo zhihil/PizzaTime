@@ -7,7 +7,7 @@ import jumboImg3 from "../../images/jumbo-3.jpeg";
 export class LandingJumbotronComponent extends React.Component {
     public render() {
         return (
-            <Carousel className="h-100">
+            <Carousel>
                 <Carousel.Item>
                     <img className="d-block w-100" src={jumboImg1} alt="" />
                     <Carousel.Caption>
@@ -16,6 +16,8 @@ export class LandingJumbotronComponent extends React.Component {
                             Choose from dozens of handtossed pizza, crafted with
                             an authentic Italian taste
                         </p>
+                        <button>Order</button>
+                        <button>Continue Previous Order</button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -26,6 +28,8 @@ export class LandingJumbotronComponent extends React.Component {
                             Choose from dozens of handtossed chicken, crafted
                             with an authentic Italian taste
                         </p>
+                        <button>Order</button>
+                        <button>Continue Previous Order</button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -36,6 +40,8 @@ export class LandingJumbotronComponent extends React.Component {
                             Choose from dozens of handtossed alcohols, crafted
                             with an authentic Italian taste
                         </p>
+                        <button>Order</button>
+                        <button>Continue Previous Order</button>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
