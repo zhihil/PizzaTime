@@ -7,7 +7,7 @@ import jumboImg3 from "../../images/jumbo-3.jpeg";
 export class LandingJumbotronComponent extends React.Component {
     public render() {
         return (
-            <Carousel>
+            <Carousel className="h-100">
                 <Carousel.Item>
                     <img className="d-block w-100" src={jumboImg1} alt="" />
                     <Carousel.Caption>
