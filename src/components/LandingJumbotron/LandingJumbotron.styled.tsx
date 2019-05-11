@@ -11,8 +11,12 @@ export const CarouselCaption = styled(Carousel.Caption)`
     }
 
     button {
-        background-color: #ffe900;
+        background-color: #000;
         color: #ffffff;
         border: none;
+
+        &:hover {
+            color: #ffe900;
+        }
     }
 `;
