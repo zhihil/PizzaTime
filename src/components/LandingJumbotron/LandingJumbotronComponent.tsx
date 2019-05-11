@@ -1,14 +1,14 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import jumboImg1 from "../../images/jumbo-1.png";
-import jumboImg2 from "../../images/jumbo-2.jpeg";
-import jumboImg3 from "../../images/jumbo-3.jpeg";
+import jumboImg2 from "../../images/jumbo-2.png";
+import jumboImg3 from "../../images/jumbo-3.png";
 import { CarouselCaption } from "./LandingJumbotron.styled";
 
 export class LandingJumbotronComponent extends React.Component {
     public render() {
         return (
-            <Carousel>
+            <Carousel fade={true}>
                 <Carousel.Item>
                     <img className="d-block w-100" src={jumboImg1} alt="" />
                     <CarouselCaption className="mb-4">
@@ -30,7 +30,7 @@ export class LandingJumbotronComponent extends React.Component {
                             with an authentic Italian taste
                         </p>
                         <button className="btn mr-1">Order</button>
-                        <button className="btn"> Continue Previous Order</button>
+                        <button className="btn">Continue Previous Order</button>
                     </CarouselCaption>
                 </Carousel.Item>
                 <Carousel.Item>
