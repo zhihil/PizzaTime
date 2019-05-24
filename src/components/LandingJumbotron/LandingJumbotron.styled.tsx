@@ -1,4 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const CarouselCaption = styled(Carousel.Caption)`
@@ -9,15 +10,15 @@ export const CarouselCaption = styled(Carousel.Caption)`
     p {
         font-weight: bold;
     }
+`;
 
-    button {
-        background-color: #000;
-        color: #ffffff;
-        border: none;
+export const StyledLink = styled(Link)`
+    background-color: #000;
+    color: #ffffff;
+    border: none;
 
-        &:hover {
-            color: #ffe900;
-        }
+    &:hover {
+        color: #ffe900;
     }
 `;
 

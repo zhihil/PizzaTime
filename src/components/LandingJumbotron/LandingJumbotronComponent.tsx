@@ -3,7 +3,11 @@ import Carousel from "react-bootstrap/Carousel";
 import jumboImg1 from "../../images/jumbo-1.png";
 import jumboImg2 from "../../images/jumbo-2.png";
 import jumboImg3 from "../../images/jumbo-3.png";
-import { CarouselCaption, Overlay } from "./LandingJumbotron.styled";
+import {
+    CarouselCaption,
+    Overlay,
+    StyledLink
+} from "./LandingJumbotron.styled";
 
 export class LandingJumbotronComponent extends React.Component {
     public render() {
@@ -19,8 +23,12 @@ export class LandingJumbotronComponent extends React.Component {
                             Choose from dozens of handtossed pizza, crafted with
                             an authentic Italian taste
                         </p>
-                        <button className="btn mr-1">Order</button>
-                        <button className="btn">Continue Previous Order</button>
+                        <StyledLink to={"order/location"} className="btn mr-1">
+                            Order
+                        </StyledLink>
+                        <StyledLink to={"/missing"} className="btn">
+                            Continue Previous Order
+                        </StyledLink>
                     </CarouselCaption>
                 </Carousel.Item>
                 <Carousel.Item>
