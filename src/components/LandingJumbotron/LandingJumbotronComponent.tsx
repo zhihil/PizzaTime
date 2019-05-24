@@ -41,8 +41,12 @@ export class LandingJumbotronComponent extends React.Component {
                             Choose from dozens of handtossed chicken, crafted
                             with an authentic Italian taste
                         </p>
-                        <button className="btn mr-1">Order</button>
-                        <button className="btn">Continue Previous Order</button>
+                        <StyledLink to={"order/location"} className="btn mr-1">
+                            Order
+                        </StyledLink>
+                        <StyledLink to={"/missing"} className="btn">
+                            Continue Previous Order
+                        </StyledLink>
                     </CarouselCaption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -55,8 +59,12 @@ export class LandingJumbotronComponent extends React.Component {
                             Choose from dozens of handtossed alcohols, crafted
                             with an authentic Italian taste
                         </p>
-                        <button className="btn mr-1">Order</button>
-                        <button className="btn">Continue Previous Order</button>
+                        <StyledLink to={"order/location"} className="btn mr-1">
+                            Order
+                        </StyledLink>
+                        <StyledLink to={"/missing"} className="btn">
+                            Continue Previous Order
+                        </StyledLink>
                     </CarouselCaption>
                 </Carousel.Item>
             </Carousel>
