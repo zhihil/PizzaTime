@@ -18,21 +18,21 @@ export class OrderPage extends React.Component {
                     buttonText={"Learn More"}
                 />
                 <FrontPageCell
-                    img={require("../images/group-discount.jpg")}
-                    title={"Dinner Deals"}
-                    body={"Get discounts with bigger groups"}
+                    img={require("../images/mountain.jpg")}
+                    title={"PizzaTime Contest"}
+                    body={"Win a vacation to Hawaii"}
                     buttonText={"Learn More"}
                 />
                 <FrontPageCell
-                    img={require("../images/group-discount.jpg")}
-                    title={"Dinner Deals"}
-                    body={"Get discounts with bigger groups"}
+                    img={require("../images/farm.jpg")}
+                    title={"Commitment to Quality"}
+                    body={"Learn more about our suppliers"}
                     buttonText={"Learn More"}
                 />
                 <FrontPageCell
-                    img={require("../images/group-discount.jpg")}
-                    title={"Dinner Deals"}
-                    body={"Get discounts with bigger groups"}
+                    img={require("../images/artesanal.jpg")}
+                    title={"Artesanal Pizza"}
+                    body={"Unique flavours crafted by world-class chefs"}
                     buttonText={"Learn More"}
                 />
             </>

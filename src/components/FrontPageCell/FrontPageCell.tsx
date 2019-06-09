@@ -14,7 +14,7 @@ export const FrontPageCell = ({
     body,
     buttonText
 }: IFrontPageCellProps) => (
-    <div className="col-12 col-md-6 px-0 d-inline-block position-relative">
+    <div className="col-12 col-lg-6 px-0 d-inline-block position-relative">
         <AbsoluteContent>
             <h1>{title}</h1>
             <p>{body}</p>
