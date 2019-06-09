@@ -11,10 +11,30 @@ export class OrderPage extends React.Component {
                     <title>PizzaTime Home Page</title>
                 </Helmet>
                 <LandingJumbotronComponent />
-                <FrontPageCell img={require("../images/group-discount.jpg")} />
-                <FrontPageCell img={require("../images/group-discount.jpg")} />
-                <FrontPageCell img={require("../images/group-discount.jpg")} />
-                <FrontPageCell img={require("../images/group-discount.jpg")} />
+                <FrontPageCell
+                    img={require("../images/group-discount.jpg")}
+                    title={"Dinner Deals"}
+                    body={"Get discounts with bigger groups"}
+                    buttonText={"Learn More"}
+                />
+                <FrontPageCell
+                    img={require("../images/group-discount.jpg")}
+                    title={"Dinner Deals"}
+                    body={"Get discounts with bigger groups"}
+                    buttonText={"Learn More"}
+                />
+                <FrontPageCell
+                    img={require("../images/group-discount.jpg")}
+                    title={"Dinner Deals"}
+                    body={"Get discounts with bigger groups"}
+                    buttonText={"Learn More"}
+                />
+                <FrontPageCell
+                    img={require("../images/group-discount.jpg")}
+                    title={"Dinner Deals"}
+                    body={"Get discounts with bigger groups"}
+                    buttonText={"Learn More"}
+                />
             </>
         );
     }
