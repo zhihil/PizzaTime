@@ -35,15 +35,6 @@ export class OrderPage extends React.Component {
                     body={"Unique flavours crafted by world-class chefs"}
                     buttonText={"Learn More"}
                 />
-                <div
-                    style={{
-                        backgroundColor: "black",
-                        color: "white",
-                        height: 300
-                    }}
-                >
-                    Footer
-                </div>
             </>
         );
     }

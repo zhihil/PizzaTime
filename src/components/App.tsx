@@ -24,6 +24,15 @@ export class App extends React.Component {
                     <Redirect exact={true} from="/" to="/order" />
                     <Route component={NotFoundPage} />
                 </Switch>
+                <div
+                    style={{
+                        backgroundColor: "black",
+                        color: "white",
+                        height: 300
+                    }}
+                >
+                    Footer
+                </div>
             </>
         );
     }
