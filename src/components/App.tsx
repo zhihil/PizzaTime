@@ -5,6 +5,7 @@ import { CartPage } from "../pages/CardPage";
 import { LocationFormPage } from "../pages/LocationFormPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { OrderPage } from "../pages/OrderPage";
+import { Footer } from "./Footer/Footer";
 import { NavbarComponent } from "./Navbar/Navbar";
 
 export class App extends React.Component {
@@ -24,15 +25,7 @@ export class App extends React.Component {
                     <Redirect exact={true} from="/" to="/order" />
                     <Route component={NotFoundPage} />
                 </Switch>
-                <div
-                    style={{
-                        backgroundColor: "black",
-                        color: "white",
-                        height: 300
-                    }}
-                >
-                    Footer
-                </div>
+                <Footer />
             </>
         );
     }

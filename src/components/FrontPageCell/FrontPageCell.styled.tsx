@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import {
-    BtnPrimary,
-    BtnPrimaryFocusActive,
-    BtnPrimaryHover
+    btnPrimary,
+    btnPrimaryFocusActive,
+    btnPrimaryHover
 } from "../../style/colors";
 
 export const AbsoluteContent = styled.div`
@@ -30,19 +30,19 @@ export const AbsoluteContent = styled.div`
     .btn {
         margin-top: 2rem;
 
-        background-color: ${BtnPrimary};
-        border: 2px solid ${BtnPrimary};
+        background-color: ${btnPrimary};
+        border: 2px solid ${btnPrimary};
 
         font-weight: bold;
 
         &:focus:active {
-            background-color: ${BtnPrimaryFocusActive};
-            border: 2px solid ${BtnPrimaryFocusActive};
+            background-color: ${btnPrimaryFocusActive};
+            border: 2px solid ${btnPrimaryFocusActive};
         }
 
         &:hover {
-            background-color: ${BtnPrimaryHover};
-            border: 2px solid ${BtnPrimaryHover};
+            background-color: ${btnPrimaryHover};
+            border: 2px solid ${btnPrimaryHover};
         }
     }
 `;
